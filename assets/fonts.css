@@ -3,5 +3,6 @@ body{
 	text-underline-position: from-font;
 	text-decoration-skip-ink: none;
 	letter-spacing: -0.02em;
+	overflow-x: hidden;
 
 }
