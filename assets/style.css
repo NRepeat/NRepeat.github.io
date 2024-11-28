@@ -2,11 +2,24 @@
   --card-section-info-bg-color: #f9fadf;
   --main-text-color: #73a6b1;
   --main-button-bg-color: #7ae5fd;
+  --card-bg-color: #f1fdff;
+  --contact-card-bg-color: #ffffff;
+
+
+  --main-padding: 2rem;
+  --button-width: 264px;
+  --button-height: 59px;
+  --border-radius-large: 87px;
+  --border-radius-small: 10px;
+  --font-size-h1: 63.07px;
+  --font-size-h2: 60px;
+  --font-size-paragraph: 27px;
+  --font-size-small-text: 20px;
 }
 
 .main-header {
   display: flex;
-  padding: 2rem 3rem 2rem 3rem;
+  padding: var(--main-padding) 3rem var(--main-padding) 3rem;
   justify-content: space-between;
   gap: 2rem;
   align-items: center;
@@ -15,7 +28,9 @@
 .header-nav-button {
   background-color: var(--main-button-bg-color);
 }
-
+.card-paragraph{
+  max-width: 500px;
+}
 .header-icon-wrapper {
   width: 4rem;
   height: 4rem;
@@ -52,11 +67,11 @@
 }
 
 .button-wrapper {
-  width: 264px;
-  height: 59px;
+  width: var(--button-width);
+  height: var(--button-height);
   padding: 21px 35px 21px 35px;
   gap: 10px;
-  border-radius: 87px;
+  border-radius: var(--border-radius-large);
   opacity: 0px;
   border: 0;
   font-size: 18px;
@@ -78,7 +93,7 @@
   gap: 1.5rem;
 }
 .title-h1 {
-  font-size: 63.07px;
+  font-size: var(--font-size-h1);
   font-weight: 800;
   line-height: 70px;
   text-align: left;
@@ -86,7 +101,7 @@
   /* text-wrap: wrap; */
 }
 .paragraph-text {
-  font-size: 27px;
+  font-size: var(--font-size-paragraph);
   font-weight: 400;
   line-height: 24px;
   text-align: left;
@@ -101,7 +116,7 @@
   padding-bottom: 10rem;
 }
 .title-h2 {
-  font-size: 60px;
+  font-size: var(--font-size-h2);
   font-weight: 400;
   line-height: 72px;
   text-transform: uppercase;
@@ -120,8 +135,7 @@
   opacity: 0px;
 }
 .paragraph-sub-text {
-  font-size: 20px;
-  font-size: 20px;
+  font-size: var(--font-size-small-text);
   font-weight: 400;
   line-height: 24px;
 }
@@ -139,10 +153,12 @@
 .card {
   display: flex;
   justify-content: space-between;
-  background-color: #f1fdff;
+  background-color: var(--card-bg-color);
   padding: 40px 62px 40px 62px;
   gap: 2rem;
-  border-radius: 10px;
+  border-radius: var(--border-radius-small);
+  width: 1200px;
+
 }
 .card-title {
   font-size: 46px;
@@ -155,7 +171,7 @@
 }
 .card-image-wrapper {
   display: flex;
-  border-radius: 10px;
+  border-radius: var(--border-radius-small);
   overflow: hidden;
   width: 100%;
   max-width: 585px;
@@ -208,13 +224,13 @@
   justify-content: center;
   flex-direction: column;
   gap: 1rem;
-  padding-bottom: 2rem;
+  padding-bottom: var(--main-padding);
 }
 .goal-number {
   display: flex;
 }
 .number-text {
-  font-size: 60px;
+  font-size: var(--font-size-h2);
   font-weight: 400;
   line-height: 72px;
   letter-spacing: -0.02em;
@@ -252,7 +268,7 @@
 }
 .text-contact-black {
   color: black;
-  font-size: 60px;
+  font-size: var(--font-size-h2);
   font-weight: 400;
   line-height: 72px;
   letter-spacing: -0.02em;
@@ -272,7 +288,7 @@
   width: 100%;
   flex-direction: column;
   gap: 3rem;
-  padding-left: 2rem;
+  padding-left: var(--main-padding);
 }
 .question-contact-paragraph {
   display: flex;
@@ -305,9 +321,9 @@
 }
 .contact-info-image-card {
   display: flex;
-  background-color: #ffffff;
-  padding: 60px;
-  border-radius: 10px;
+  background-color: var(--contact-card-bg-color);
+  padding: var(--font-size-h2);
+  border-radius: var(--border-radius-small);
 
 }
 .contact-form-block {
@@ -330,10 +346,10 @@
   border-radius: 61px;  
   max-width: 470px;
   box-sizing: border-box;
-  background-color: #F9FADF;
+  background-color: var(--card-section-info-bg-color);
 }
 .form-paragraph {
-  font-size: 27px;
+  font-size: var(--font-size-paragraph);
   font-weight: 400;
   line-height: 32.4px;
   text-align: left;
